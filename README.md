@@ -55,25 +55,3 @@
                             <p><u><b>Visualiation:</b></u></p>
                             <!-- <p>Initialy Frog at 0th index </p> -->
                             <p style="text-align:center;"><img src="assets/video.gif" width="500" height="300"></p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
