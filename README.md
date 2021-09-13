@@ -1,1 +1,1 @@
-# JumpGame
+# MinJumps
