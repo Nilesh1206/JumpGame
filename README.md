@@ -20,7 +20,7 @@
 <p>Explanation: The minimum number of jumps to reach the last index is 16. Jump 1 step from index 0 to 1,see the following jump array, where arr[i] indicates the number of jumps.</p>
 <p>Output array=[1,3,2,2,3,1,1,1,1,2,2,3,1,2,2,2]</p></code></pre>
 
-### Note: In this problem we are not considering 0 as a minimum jump , coz , if player hits the zero then it won't jumps further.
+## Note: In this problem we are not considering 0 as a minimum jump , coz , if player hits the zero then it won't jumps further.
 
 <pre><code><p><b>Constraints:</b></p>
 1 <= nums.length <=3 *<var>10</var><sup>4</sup> 
@@ -55,3 +55,11 @@
                             <p><u><b>Visualiation:</b></u></p>
                             <!-- <p>Initialy Frog at 0th index </p> -->
                             <p style="text-align:center;"><img src="assets/video.gif" width="500" height="300"></p>
+                            
+                            
+                            
+                            
+                            
+<!-- ## Contributor
+ *  <a href="https://github.com/Nilesh1206">Nilesh Gopale</a>
+ *  <a>Kshitija Zine</a> -->
