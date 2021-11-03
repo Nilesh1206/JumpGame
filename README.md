@@ -1,4 +1,4 @@
-# MinJumpsGame
+# Jump Game 
 <p><b>Jump Game is a very famous Problem during the interviews, and which is most askable problem in various contests as well as phone interviews.</b></p>
 
 <p><u style="font-size: 20px;"><b> <u>Problem Statement:</u></b></u></p>
