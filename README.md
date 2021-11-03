@@ -60,6 +60,6 @@
                             
                             
                             
-<!-- ## Contributor
+## Contributor
  *  <a href="https://github.com/Nilesh1206">Nilesh Gopale</a>
- *  <a>Kshitija Zine</a> -->
+<!--  *  <a>Kshitija Zine</a> -->
