@@ -1,4 +1,11 @@
 onload = function () {
+    let on_off = document.querySelector('.container .title');
+    let audio = document.querySelector('.musicOn audio');
+
+    on_off.onclick = function () {
+        audio.paused ? audio.play() : audio.pause();
+    }
+
     var modal = document.getElementById("myModal");
     var btn = document.getElementById("myBtn");
     var span = document.getElementsByClassName("close")[0];
@@ -21,7 +28,7 @@ onload = function () {
     const fly_step = unit * 8;
     let platforms_array = [];
     let moves = [];
-    let size=this.document.getElementById('myVar');
+    let size = this.document.getElementById('myVar');
     let pos = 0;
     let firstTime = true;
     let onGround = true;
@@ -35,7 +42,7 @@ onload = function () {
         game.state.start("GameState");
     };
     var temptext = document.getElementById('temptext');
-    var pop=document.getElementById('exampleModalCenter');
+    var pop = document.getElementById('exampleModalCenter');
     var solve = document.getElementById('solve');
     const text = 'You\'ll receive a jumps array as input. Each index stores the maximum islands you can jump ahead from current island. ' +
         'You need to find least number of moves needed to reach the last island and return jump to be taken on each island.<br>' +
@@ -168,15 +175,19 @@ onload = function () {
                         var modal1 = document.getElementById("myModal1");
                         var span1 = document.getElementsByClassName("close1")[0];
                         modal1.style.display = "block";
-                        span1.onclick = function () {
-                            modal1.style.display = "none";
+                        moves = solveProblem(platforms_array);
+                        var len=moves.length;
+                        document.getElementById("score").innerHTML="<p><centre><h3 style='color:crimson'>Minimum Jumps Required</h3></centre></p>"+"<centre> </centre>"+"<span style='font-size:30px;'>"+len+"</span>";
+                        window.onclick = function (event) {
+                            if (event.target == modal) {
+                                modal.style.display = "none";
+                            }
                         }
 
-    window.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
+                        span1.onclick = function () {
+                            modal1.style.display = "none";
+                            
+                        }
 
                     }
                     player.body.velocity.y = -fly_step;
@@ -199,8 +210,13 @@ onload = function () {
 
     solve.onclick = function () {
         moves = solveProblem(platforms_array);
-        size=moves.length;
-        temptext.innerText = temptext.innerText + "\n\nSolution\n" + moves;
+        size = moves.length;
+        temptext.innerText = temptext.innerText + "\n\nSolution\n"+ moves;
+        
+        
+
+
+
         player.body.enable = true;
     };
 };
