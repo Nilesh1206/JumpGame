@@ -12,7 +12,11 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/2.4.7/phaser.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
+
+
+
     <script src="game.js"></script>
 </head>
 
@@ -56,8 +60,8 @@
                     jump further.</b></p>
 
             <p><b>Constraints:</b></p>
-            <p> 1 <= nums.length <=3 * <var>10</var><sup>4</sup> </p>
-                    <p> 1<=nums[i] <=<var>10</var><sup>5</sup></p>
+            <p> 1 <= nums.length <=3 * 104 </p>
+                    <p> 1<=nums[i] <=105</p>
 
                             <p><b>Approach & Solution: </b></p>
                             <p>There are many ways to solve this problem, but two ways are very famous. One uses
@@ -100,7 +104,7 @@
     <div id="Nav">
         <div class="navbar navbar-light" style="font-size: 30px; font-family: sans-serif; background-color: white;">
             <h1 style="color: crimson; align-content: center;"><b><img src="assets/frog.jpg" width="50" height="40">
-                    Minimum Jumps Game <img src="assets/frog.jpg" width="50" height="40"></b></h1>
+                    Minimum Jump Game <img src="assets/frog.jpg" width="50" height="40"></b></h1>
         </div>
     </div>
     <div id="container">
@@ -117,15 +121,37 @@
             <button type="button" class="btn btn-danger" id="generate-problem" style="margin: 5px;">Get New
                 Problem</button>
             <button type="button" class="btn btn-success" id="solve" style="margin: 5px;">Solve</button>
+            <!-- <div id="skill-set" onchange="displayname()"></div> -->
         </div>
     </div>
 
 
+    <div class="container" id="c1">
+        <h1 class="title">
+        </h1>
+    </div>
+
+
+
     <div id="myModal1" class="modal1">
         <div class="modal-content">
-            <span class="close1">&times;</span>
-            <p style="text-align:center;"><img src="assets/win.gif" width="450" height="300"></p>
-            <!-- <p><h1> <i>Winner..!!</i> <span style="display:inline-block; width: 150px;"></span> <i>Winner..!!</i>  <span style="display:inline-block; width: 150px;"></span><i> Winner..!! </i> </h1></p> -->
+            <span class="close1 float-lg-right">&times;</span>
+            <p style="text-align:center;">
+            <div id="score" class="score" style="text-align: center;">
+
+            </div>
+            <div class="row">
+                <div class="column">
+                    <img src="assets/celeb.gif" width="150" height="180">
+                </div>
+                <div class="column">
+                    <img src="assets/fg_dc.gif" width="150" height="180" class="rounded mx-auto d-block" alt="...">
+                </div>
+                <div class="column">
+                    <img src="assets/celeb.gif" width="150" height="180">
+                </div>
+            </div>
+            </p>
         </div>
     </div>
 
