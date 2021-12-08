@@ -15,7 +15,7 @@ body {
 }
 
 #container2 {
-  padding: 50px;
+  padding: 100px;
   background-color: black;
   max-height: 470px;
   color: white;
@@ -27,7 +27,7 @@ body {
 }
 
 .solution {
-  padding-left: 50px;
+  padding: 50px;
   max-height: 470px;
 }
 
